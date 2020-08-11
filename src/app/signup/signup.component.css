@@ -1,0 +1,108 @@
+.rowMain ,.secondHalf{
+    min-height: 500px;
+ display: flex;
+}
+.secondHalf,.secondHalfContents {
+ margin: auto;
+}
+.firstHalf{
+ display: flex;
+}
+.secondHalf {
+ color: #fff ;
+}
+.secondHalf{
+background: url("/assets/bg1.jpg");
+background-size: cover !important;
+background-repeat: no-repeat;
+}
+img.proimg {
+ width: 60px;
+ height: 60px;
+}
+.firsthalfcontent {
+ margin: auto;
+ width: 75%;
+}
+h1 {
+ font-size: 50px;
+ font-weight: 600;
+ margin-bottom: 30px;
+}
+label {
+ font-size: 14px;
+ color: #9c9a9a;
+}
+input {
+ margin: 5px 0 10px 0;
+ border: none;
+ border-bottom: 1px solid #ccc;
+ box-shadow: none;
+ padding: 0;
+}
+input::placeholder {
+ font-size: 17px;
+ color: #ccc !important;
+}
+span.keepTxt {
+ margin-left: 20px;
+}
+.btnAll {
+ font-size: 16px;
+ background: #8815c3;
+ color: #fff;
+ width: 90%;
+ margin: 20px 0;
+ padding: 7px 20px;
+ border-radius: 15px 0px 15px 15px;
+}
+.box1 {
+ width: 350px;
+ height: auto;
+ box-shadow: 1px 1px 4px #aaa;
+ padding: 20px;
+}
+.forgor {
+ float: right;
+ position: absolute;
+ right: 15%;
+}
+a {
+ color: #8815c3;}
+
+ .contentmain {
+     border-bottom: 1px solid #ccc;
+     padding: 15px 0;
+ }
+ .logoImg {
+     width: 50px;
+     height: 50px;
+     margin-right: 10px;
+ margin-bottom: 20px;
+}
+ 
+ .partnerMain .col-md-3.col-sm-6 {
+     display: inline-flex;
+ }
+ .TextMain {
+     width: 50%;
+ }
+
+ i.fa.fa-star {
+     color: yellow;
+     margin-right: 2px;
+ }
+
+ .starmain {
+     margin-bottom: 20px;
+ }
+
+ .TextMain {
+     margin-bottom: 50px;
+ }
+ p.textReview {
+     font-size: 12px;
+ }
+ p.partnerHead {
+     font-size: 13px;
+ }

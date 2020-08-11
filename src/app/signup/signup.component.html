@@ -1,0 +1,97 @@
+<div class="container-fluid">
+  <div class="row rowMain">
+      <div class="col-md-6 col-lg-6 firstHalf"><div class="firsthalfcontent">
+          <h1>sign Up</h1>
+          <form  [formGroup]="angForm" (ngSubmit)="postdata(angForm)" method="POST" >
+              <div class="form-group">
+                  <label for="email">Full name:</label>
+                  <input type="email" class="form-control" formControlName="fullname" id="fullname" placeholder="Julie Appleseed" name="fullname">
+                  <div *ngIf="submitted && f.fullname.errors" class="invalid-feedback">
+                    <div *ngIf="f.fullname.errors.required" class="text-white">Email is required</div>
+                    <div *ngIf="f.fullname.errors.email" class="text-white">Email must be a valid email address</div>
+                </div>
+                </div>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" formControlName="email" id="email" placeholder="Enter email address" name="email">
+                <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                    <div *ngIf="f.email.errors.required" class="text-white">Email is required</div>
+                    <div *ngIf="f.email.errors.email" class="text-white">Email must be a valid email address</div>
+                </div>
+            </div>
+              <div class="form-group">
+                <label for="pwd" class="posrel">Create Password:<a href="#" class="forgor">show </a></label>
+                <input type="password" class="form-control" formControlName="password" id="password" placeholder=" password" name="password">
+                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                    <div *ngIf="f.password.errors.required" class="text-white">Password is required</div>
+                    <div *ngIf="f.password.errors.minlength" class="text-white">Password must be atleast 6 character</div>
+                </div>  
+            </div>
+              
+              <button type="submit" class="btn btnAll">Sign up</button>
+            </form>
+            <label>By signing in ,you agreed to our<a routerLink="/data"> Trems and conditions </a></label><br>
+            <label>Allready have an account? <a [routerLink]="['/']">Log In</a></label>
+          </div>
+      </div>
+     
+      <div class="col-md-6 col-lg-6 secondHalf">
+          <div class="secondHalfContents">
+          <div class="starmain">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+          </div>
+          <div class="TextMain">
+              <p class="textReview">"the folks at Carson Shopify Experts are amazing to work with. the best thing is the reasonable pricing and their smooth process of handinh task."</p>
+              <p class="autherName">Andy Jackson</p>
+              <p class="autherText">Owner & Director of Marketing.</p>
+              <h2>Google</h2>
+          </div>
+          <div class="partnerMain">
+              <p class="partnerHead">  Pertners with the best</p>
+                  <div class="row partentDiv">
+                      <div class="col-md-3 col-sm-6">
+                          <img class="logoImg" src="/assets/bg2.jpg">
+                          <p class="brandd">Shipify</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <img class="logoImg" src="/assets/bg2.jpg">
+                          <p class="brandd">Shipify</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <img class="logoImg" src="/assets/bg2.jpg">
+                          <p class="brandd">Shipify</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <img class="logoImg" src="/assets/bg2.jpg">
+                          <p class="brandd">Shipify</p>
+                      </div>
+                  </div>
+                  <div class="row partentDiv">
+                      <div class="col-md-3 col-sm-6">
+                          <img class="logoImg" src="/assets/bg2.jpg">
+                          <p class="brandd">Shipify</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <img class="logoImg" src="/assets/bg2.jpg">
+                          <p class="brandd">Shipify</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <img class="logoImg" src="/assets/bg2.jpg">
+                          <p class="brandd">Shipify</p>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                          <img class="logoImg" src="/assets/bg2.jpg">
+                          <p class="brandd">Shipify</p>
+                      </div>
+                  </div>
+            
+          </div>
+          </div>
+          
+      </div>
+  </div>
+</div>
